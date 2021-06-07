@@ -1,0 +1,27 @@
+
+Orlando Lahoz 1097638
+
+import sys
+import csv
+
+def print ("**Registrar**\n")
+
+        Datos = open(sys.argv[1],'a')
+
+        Name = input("Nombre: ")
+        LastName = input("Apellido: ")
+        Age = input("Edad: ")
+        ID = input("Cedula: ")
+        print ("!Los Datos fueron guardados con exito!\n")
+        Opcion1 = input("Desea Continuar? S/N?")
+        new_row = f'{Name}|{LastName}|{Age}|{ID}\n'
+        Datos.write(new_row)
+        if Opcion1  == "S":
+            Datos.close()
+            
+
+            sys.exit()
+        
+
+        
+ 
